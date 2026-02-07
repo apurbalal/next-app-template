@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.join(__dirname, '..'),
   },
+  experimental: {
+    webpackBuildWorker: false,
+    workerThreads: false,
+    parallelServerCompiles: false,
+  },
 };
 
 export default nextConfig;
